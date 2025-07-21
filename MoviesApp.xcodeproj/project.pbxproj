@@ -33,7 +33,7 @@
 		98B6544A2E2EF0720076AC66 /* Exceptions for "MoviesApp" folder in "MoviesApp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				AppCore/Info.plist,
 			);
 			target = 98B6541E2E2EF0700076AC66 /* MoviesApp */;
 		};

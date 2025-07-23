@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		983F9D412E30BE3A00D48363 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 983F9D402E30BE3A00D48363 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		98B654392E2EF0720076AC66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				983F9D412E30BE3A00D48363 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,12 +90,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		983F9D3F2E30BE3A00D48363 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		98B654162E2EF0700076AC66 = {
 			isa = PBXGroup;
 			children = (
 				98B654212E2EF0700076AC66 /* MoviesApp */,
 				98B6543B2E2EF0720076AC66 /* MoviesAppTests */,
 				98B654452E2EF0720076AC66 /* MoviesAppUITests */,
+				983F9D3F2E30BE3A00D48363 /* Frameworks */,
 				98B654202E2EF0700076AC66 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +138,7 @@
 			);
 			name = MoviesApp;
 			packageProductDependencies = (
+				983F9D402E30BE3A00D48363 /* Kingfisher */,
 			);
 			productName = MoviesApp;
 			productReference = 98B6541F2E2EF0700076AC66 /* MoviesApp.app */;
@@ -208,6 +222,9 @@
 			);
 			mainGroup = 98B654162E2EF0700076AC66;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				983F9D3C2E30BA7D00D48363 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 98B654202E2EF0700076AC66 /* Products */;
 			projectDirPath = "";
@@ -290,7 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MoviesApp/Info.plist;
+				INFOPLIST_FILE = MoviesApp/AppCore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +334,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MoviesApp/Info.plist;
+				INFOPLIST_FILE = MoviesApp/AppCore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -563,6 +580,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		983F9D3C2E30BA7D00D48363 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		983F9D402E30BE3A00D48363 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 983F9D3C2E30BA7D00D48363 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 98B654172E2EF0700076AC66 /* Project object */;
 }

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="deH-Hj-9GB">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome to our Movies App-->
+        <scene sceneID="yIC-Y2-jz1">
+            <objects>
+                <viewController storyboardIdentifier="movielistingscreen" title="Welcome to our Movies App" interactionActivityTrackingBaseName="movielist" useStoryboardIdentifierAsRestorationIdentifier="YES" id="deH-Hj-9GB" customClass="MovieListingScreenViewController" customModule="MoviesApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fWu-g4-h3l">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3Fj-eK-h74">
+                                <rect key="frame" x="0.0" y="162" width="393" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="deH-Hj-9GB" id="gvu-TV-Mcg"/>
+                                </connections>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is a list of the top 2025 Movies 🎞️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymB-QO-Rrp">
+                                <rect key="frame" x="16" y="132" width="304" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to our Movie App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPK-uT-TOd">
+                                <rect key="frame" x="82" y="88" width="229" height="22"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gHO-6F-UQh">
+                                <rect key="frame" x="0.0" y="228" width="393" height="556"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="W7K-Ed-pg9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gHO-6F-UQh" firstAttribute="top" secondItem="3Fj-eK-h74" secondAttribute="bottom" constant="10" id="2Lo-Yz-eWv"/>
+                            <constraint firstItem="gHO-6F-UQh" firstAttribute="bottom" secondItem="W7K-Ed-pg9" secondAttribute="bottom" id="4AM-IW-Pis"/>
+                            <constraint firstItem="W7K-Ed-pg9" firstAttribute="trailing" secondItem="3Fj-eK-h74" secondAttribute="trailing" id="5ay-3O-ui4"/>
+                            <constraint firstItem="gHO-6F-UQh" firstAttribute="trailing" secondItem="W7K-Ed-pg9" secondAttribute="trailing" id="9eZ-vp-fTg"/>
+                            <constraint firstItem="gPK-uT-TOd" firstAttribute="centerX" secondItem="fWu-g4-h3l" secondAttribute="centerX" id="C9n-Ae-Xtu"/>
+                            <constraint firstItem="W7K-Ed-pg9" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ymB-QO-Rrp" secondAttribute="trailing" symbolic="YES" id="EQb-Zg-YbA"/>
+                            <constraint firstItem="3Fj-eK-h74" firstAttribute="top" secondItem="ymB-QO-Rrp" secondAttribute="bottom" constant="10" id="F0d-Rd-jYr"/>
+                            <constraint firstAttribute="top" secondItem="gPK-uT-TOd" secondAttribute="top" constant="-88" id="OaU-0c-bnk"/>
+                            <constraint firstItem="ymB-QO-Rrp" firstAttribute="leading" secondItem="W7K-Ed-pg9" secondAttribute="leading" constant="16" id="QMf-Yd-4wx"/>
+                            <constraint firstItem="gHO-6F-UQh" firstAttribute="leading" secondItem="W7K-Ed-pg9" secondAttribute="leading" id="dLG-Yg-gML"/>
+                            <constraint firstItem="3Fj-eK-h74" firstAttribute="leading" secondItem="W7K-Ed-pg9" secondAttribute="leading" id="vkG-A2-y5N"/>
+                            <constraint firstItem="ymB-QO-Rrp" firstAttribute="top" secondItem="gPK-uT-TOd" secondAttribute="bottom" constant="22" id="yCr-cL-e4I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="3Fj-eK-h74" id="rbr-rn-m54"/>
+                        <outlet property="tableView" destination="gHO-6F-UQh" id="ycd-u9-QiR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Xf-hh-1qr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290.83969465648852" y="113.38028169014085"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
